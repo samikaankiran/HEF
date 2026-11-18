@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page not found — HEF</title>
+<title>Sayfa bulunamadı — HEF</title>
 <meta name="robots" content="noindex">
 
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
@@ -397,6 +397,7 @@ html:has(.menu[open]){overflow:hidden}
   @media (hover:hover){.cta:hover .arr,.hero-links a:hover .arr,.menu-list a:hover .arr{translate:4px 0}}
   .menu-list a:focus-visible .arr{translate:4px 0}
 }
+.site-nav a.lang{transition:opacity 300ms var(--ease);opacity:.65}.site-nav a.lang:hover,.site-nav a.lang:focus-visible{opacity:1}
 </style>
 </head>
 <body>
@@ -414,26 +415,27 @@ html:has(.menu[open]){overflow:hidden}
   </symbol>
 </svg>
 
-<a class="skip" href="#icerik">Skip to content</a>
+<a class="skip" href="#icerik">İçeriğe geç</a>
 
 <header class="site-header on-light">
-  <a class="logo" href="/" aria-label="HEF home"><svg viewBox="0 0 192 157" aria-hidden="true" focusable="false"><use href="#hef-logo"/></svg><span class="hef-lottie" aria-hidden="true"></span></a>
-  <nav class="site-nav" aria-label="Main menu">
+  <a class="logo" href="/tr/" aria-label="HEF ana sayfa"><svg viewBox="0 0 192 157" aria-hidden="true" focusable="false"><use href="#hef-logo"/></svg><span class="hef-lottie" aria-hidden="true"></span></a>
+  <nav class="site-nav" aria-label="Ana menü">
     <ul>
-      <li><button class="menu-btn" type="button" id="menu-open" aria-haspopup="dialog" aria-controls="menu"><svg class="burger" viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2"/><rect y="6" width="20" height="2"/><rect y="12" width="20" height="2"/></svg>Menu</button></li>
+      <li><a class="lang" href="/en/" hreflang="en" lang="en" aria-label="English">EN</a></li>
+      <li><button class="menu-btn" type="button" id="menu-open" aria-haspopup="dialog" aria-controls="menu"><svg class="burger" viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2"/><rect y="6" width="20" height="2"/><rect y="12" width="20" height="2"/></svg>Menü</button></li>
     </ul>
   </nav>
 </header>
 
-<dialog class="menu" id="menu" tabindex="-1" aria-label="Menu">
+<dialog class="menu" id="menu" tabindex="-1" aria-label="Menü">
   <div class="menu-head">
-    <a class="logo" href="/" aria-label="HEF home"><svg viewBox="0 0 192 157" aria-hidden="true" focusable="false"><use href="#hef-logo"/></svg></a>
-    <button class="menu-btn" type="button" id="menu-close" aria-label="Close menu"><svg class="burger" viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect x="1" y="6" width="18" height="2" transform="rotate(45 10 7)"/><rect x="1" y="6" width="18" height="2" transform="rotate(-45 10 7)"/></svg>Close</button>
+    <a class="logo" href="/tr/" aria-label="HEF ana sayfa"><svg viewBox="0 0 192 157" aria-hidden="true" focusable="false"><use href="#hef-logo"/></svg></a>
+    <button class="menu-btn" type="button" id="menu-close" aria-label="Menüyü kapat"><svg class="burger" viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect x="1" y="6" width="18" height="2" transform="rotate(45 10 7)"/><rect x="1" y="6" width="18" height="2" transform="rotate(-45 10 7)"/></svg>Kapat</button>
   </div>
   <ul class="menu-list">
-    <li><a href="/about.html">About <span class="arr" aria-hidden="true">→</span></a></li>
-    <li><a href="/projects.html">Projects <span class="arr" aria-hidden="true">→</span></a></li>
-    <li><a href="/contact.html">Contact <span class="arr" aria-hidden="true">→</span></a></li>
+    <li><a href="/tr/about.html">Hakkımızda <span class="arr" aria-hidden="true">→</span></a></li>
+    <li><a href="/tr/projects.html">Projeler <span class="arr" aria-hidden="true">→</span></a></li>
+    <li><a href="/tr/contact.html">İletişim <span class="arr" aria-hidden="true">→</span></a></li>
   </ul>
 </dialog>
 
@@ -441,38 +443,38 @@ html:has(.menu[open]){overflow:hidden}
   <section class="about-page about-grid nf" aria-labelledby="h-404">
     <p class="label" style="padding-top:14px">404</p>
     <div>
-      <h1 id="h-404">This page could not be found.</h1>
-      <p class="nf-lead">The link may be out of date, or the page may have moved. Everything else is still here.</p>
-      <p class="nf-links"><a class="cta" href="/">Back to home <span class="arr" aria-hidden="true">→</span></a><a class="cta" href="/projects.html">View projects <span class="arr" aria-hidden="true">→</span></a></p>
+      <h1 id="h-404">Bu sayfa bulunamadı.</h1>
+      <p class="nf-lead">Bağlantı eski olabilir ya da sayfa taşınmış olabilir. Geri kalan her şey yerinde.</p>
+      <p class="nf-links"><a class="cta" href="/tr/">Ana sayfaya dön <span class="arr" aria-hidden="true">→</span></a><a class="cta" href="/tr/projects.html">Projeleri gör <span class="arr" aria-hidden="true">→</span></a></p>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
   <div class="footer-grid">
-    <div><p>HEF is a design &amp; fit-out studio<br>located in Istanbul.</p></div>
+    <div><p>HEF, İstanbul’da bir tasarım &amp; uygulama<br>stüdyosudur.</p></div>
     <div class="footer-col">
-      <p class="label">Projects</p>
-      <ul><li><a class="flink" href="/projects.html#office">Office<span class="arr" aria-hidden="true">→</span></a></li><li><a class="flink" href="/projects.html#residential">Residential<span class="arr" aria-hidden="true">→</span></a></li></ul>
+      <p class="label">Projeler</p>
+      <ul><li><a class="flink" href="/tr/projects.html#office">Ofis<span class="arr" aria-hidden="true">→</span></a></li><li><a class="flink" href="/tr/projects.html#residential">Konut<span class="arr" aria-hidden="true">→</span></a></li></ul>
     </div>
     <div class="footer-col">
-      <p class="label">Services</p>
-      <ul><li><a class="flink" href="/about.html#services">Interior Design<span class="arr" aria-hidden="true">→</span></a></li><li><a class="flink" href="/about.html#services">Architectural<span class="arr" aria-hidden="true">→</span></a></li><li><a class="flink" href="/about.html#services">Fit-Out<span class="arr" aria-hidden="true">→</span></a></li><li><a class="flink" href="/about.html#services">Furniture Design<span class="arr" aria-hidden="true">→</span></a></li></ul>
+      <p class="label">Hizmetler</p>
+      <ul><li><a class="flink" href="/tr/about.html#services">İç Mimarlık<span class="arr" aria-hidden="true">→</span></a></li><li><a class="flink" href="/tr/about.html#services">Mimari Proje<span class="arr" aria-hidden="true">→</span></a></li><li><a class="flink" href="/tr/about.html#services">Uygulama<span class="arr" aria-hidden="true">→</span></a></li><li><a class="flink" href="/tr/about.html#services">Mobilya Tasarımı<span class="arr" aria-hidden="true">→</span></a></li></ul>
     </div>
     <div class="footer-col">
-      <p class="label">Contact</p>
-      <ul><li lang="tr">Çengelköy Mah.<br>Kuleli Cad. 14/2</li><li><a class="flink" href="tel:+905304151354">+90 530 415 1354<span class="arr" aria-hidden="true">→</span></a></li><li><a class="flink" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.0530581%2C29.0525233" target="_blank" rel="noopener">Directions<span class="arr" aria-hidden="true">→</span></a></li></ul>
+      <p class="label">İletişim</p>
+      <ul><li lang="tr">Çengelköy Mah.<br>Kuleli Cad. 14/2</li><li><a class="flink" href="tel:+905304151354">+90 530 415 1354<span class="arr" aria-hidden="true">→</span></a></li><li><a class="flink" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.0530581%2C29.0525233" target="_blank" rel="noopener">Yol tarifi<span class="arr" aria-hidden="true">→</span></a></li></ul>
     </div>
   </div>
   <div class="footer-base">
     <div class="logo-slot"><svg viewBox="0 0 192 157" aria-hidden="true" focusable="false"><use href="#hef-logo"/></svg><div class="hef-lottie" aria-hidden="true"></div></div>
-    <p class="copy">2026 ©HEF, All Rights Reserved</p>
+    <p class="copy">2026 ©HEF, Tüm hakları saklıdır</p>
     <ul class="policies">
-      <li><a href="/privacy.html">Privacy Notice</a></li>
-      <li><a href="/cookies.html">Cookie Policy</a></li>
-      <li><a href="/data-protection.html">Data Protection Policy</a></li>
+      <li><a href="/tr/privacy.html">Aydınlatma Metni</a></li>
+      <li><a href="/tr/cookies.html">Çerez Politikası</a></li>
+      <li><a href="/tr/data-protection.html">Kişisel Verilerin Korunması Politikası</a></li>
     </ul>
-    <p class="designed">Designed by <a href="https://www.workattack.com" target="_blank" rel="noopener">Workattack</a></p>
+    <p class="designed">Tasarım: <a href="https://www.workattack.com" target="_blank" rel="noopener">Workattack</a></p>
   </div>
 </footer>
 
@@ -482,9 +484,9 @@ document.getElementById('menu-open').addEventListener('click',()=>{menu.showModa
 document.getElementById('menu-close').addEventListener('click',()=>menu.close());
 menu.querySelectorAll('.menu-list a').forEach(a=>a.addEventListener('click',()=>menu.close()));
 </script>
-<div class="consent" id="consent" role="region" aria-label="Cookie consent" hidden>
-  <p>We use one third-party service that sets cookies: the Google map on our Contact page. It only loads if you accept. <a href="/cookies.html">Cookie Policy</a></p>
-  <div class="consent-actions"><button type="button" class="btn-decline" data-consent="declined">Decline</button><button type="button" class="btn-accept" data-consent="accepted">Accept</button></div>
+<div class="consent" id="consent" role="region" aria-label="Çerez onayı" hidden>
+  <p>Çerez kullanan tek bir üçüncü taraf hizmeti kullanıyoruz: İletişim sayfamızdaki Google haritası. Harita yalnızca onay verirseniz yüklenir. <a href="/tr/cookies.html">Çerez Politikası</a></p>
+  <div class="consent-actions"><button type="button" class="btn-decline" data-consent="declined">Reddet</button><button type="button" class="btn-accept" data-consent="accepted">Kabul et</button></div>
 </div>
 <script src="/assets/consent.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie_light.min.js"></script>

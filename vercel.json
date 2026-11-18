@@ -1,9 +1,14 @@
 {
   "redirects": [
-    { "source": "/home", "destination": "/", "permanent": true },
-    { "source": "/about", "destination": "/about.html", "permanent": true },
-    { "source": "/projects", "destination": "/projects.html", "permanent": true },
-    { "source": "/projects/:id", "destination": "/projects.html", "permanent": true },
-    { "source": "/contact", "destination": "/contact.html", "permanent": true }
+    { "source": "/", "destination": "/tr/", "permanent": false },
+    { "source": "/tr", "destination": "/tr/", "permanent": true },
+    { "source": "/en", "destination": "/en/", "permanent": true },
+    { "source": "/index.html", "destination": "/tr/", "permanent": true },
+    { "source": "/:page(about|projects|contact|privacy|cookies|data-protection).html", "destination": "/en/:page.html", "permanent": true },
+    { "source": "/home", "destination": "/tr/", "permanent": true },
+    { "source": "/about", "destination": "/tr/about.html", "permanent": true },
+    { "source": "/projects", "destination": "/tr/projects.html", "permanent": true },
+    { "source": "/projects/:id", "destination": "/tr/projects.html", "permanent": true },
+    { "source": "/contact", "destination": "/tr/contact.html", "permanent": true }
   ]
 }
